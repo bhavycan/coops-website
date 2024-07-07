@@ -187,7 +187,7 @@ tl.to("#honk",{
         start: "top 120%",
         end: "top -95%",
         scrub: 1,
-        markers: true
+        markers: false
 }})
 
 tl.to("#page7 h1",{
@@ -261,5 +261,5 @@ tl.to("#car",{
         start: "top 90%",
         end: "top -50%",
         scrub: 1,
-        markers: true
+        markers: false
 }})
