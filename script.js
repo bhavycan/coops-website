@@ -263,7 +263,7 @@ mm.add("(max-width: 700px)", () => {
 
   tl.to("#page4 img",{
     color: "white",
-    x: "-135%",
+    x: "0%",
     scrollTrigger : {
         trigger : "#page4",
         scroller : "#main",
