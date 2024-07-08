@@ -32,6 +32,11 @@ ScrollTrigger.refresh();
 
 var tl = gsap.timeline()
 
+
+
+
+
+
 tl.from("#name,#name h1,#right-part h1, #logo,#right-part h2",{
     y: -20,
     duration: 1
@@ -87,7 +92,6 @@ tl.to("#page3 h1",{
 
 
 tl.to("#about-us span",{
-    fontSize: "1.6vw",
     fontFamily: "silk serif",
     stagger: 0.5,
     color : "#fed766",
@@ -196,6 +200,8 @@ tl.to("#amenities span",{
 
 tl.to("#page8 h1",{
     color : "transparent",
+    fontWeight: "800",
+    fontSize: "8vw",
     letterSpacing: "1vw",
     scrollTrigger : {
         trigger : "#page8",
@@ -208,6 +214,7 @@ tl.to("#page8 h1",{
 
 tl.to("#page8 h2",{
     letterSpacing: "1vw",
+    fontSize: "5vw",
     scrollTrigger : {
         trigger : "#page8",
         scroller : "#main",
@@ -221,7 +228,8 @@ tl.to("#page8 h2",{
 tl.to("#page9 h1",{
     color : "transparent",
     letterSpacing: "1vw",
-    fontFamily : "silk serif",
+    fontFamily : "gilroy",
+    fontSize : "8vw",
     scrollTrigger : {
         trigger : "#page9",
         scroller : "#main",
@@ -242,3 +250,27 @@ tl.to("#car",{
         scrub: 1,
         markers: false
 }})
+
+
+
+// create
+let mm = gsap.matchMedia();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(max-width: 700px)", () => {
+
+  // this setup code only runs when viewport is at least 800px wide
+
+  tl.to("#page4 img",{
+    color: "white",
+    x: "-135%",
+    scrollTrigger : {
+        trigger : "#page4",
+        scroller : "#main",
+        start: "top 100%",
+        end: "top -100%",
+        scrub: 1,
+        markers: false
+}})
+});
+
