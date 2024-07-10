@@ -631,10 +631,48 @@ display: none;
     overflow-y: hidden;
   
   }
-
-
   #page5,#page6{
     display: none;
   }
+
+
+  
+  #skip {
+
+    width: 100%;
+    top: 60%;
+
+    
+  }
+  
+  #honk {
+ display: none;
+  }
+  
+  #page7 h1 {
+    font-family: "plain light";
+    font-size: 15vw;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+
+  #span-text{
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+
+  #amenities {
+    margin-top: 40%;
+    text-align: center;
+    font-family: "silk serif";
+    text-transform: uppercase;
+    font-size: 4vw;
+    letter-spacing: 0.25vw;
+  }
+  
+
+
+
 
 }

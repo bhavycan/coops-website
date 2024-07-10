@@ -190,6 +190,7 @@ tl.to("#amenities span",{
     fontSize : "3vw",
    color: "#FF8000",
     scrollTrigger : {
+        id : "skip-text-kill",
         trigger : "#page7",
         scroller : "#main",
         start: "top 40%",
@@ -266,5 +267,20 @@ mm.add("(max-width: 700px)", () => {
 
 
 ScrollTrigger.getById("tokill").kill(true);
+ScrollTrigger.getById("skip-text-kill").kill(true);
+
+tl.to("#amenities span",{
+    fontSize : "9vw",
+   color: "#FF8000",
+    scrollTrigger : {
+        trigger : "#page7",
+        scroller : "#main",
+        start: "top 40%",
+        end: "top -20%",
+        scrub: 1,
+        markers: false
+}})
+
+
 });
 
