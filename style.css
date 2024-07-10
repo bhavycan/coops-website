@@ -187,6 +187,14 @@ body {
   color: transparent;
 }
 
+#circle-text{
+  display:  none;
+}
+
+#arrow{
+  display:  none;
+}
+
 #page4 h2 {
   font-family: "gilroy";
 }
@@ -344,14 +352,18 @@ body {
   }
 }
 
-@keyframes anime-menu{
-    from {
-      transform: translate(0%);
-    }
-    to {
-      transform: translate(calc(-310%));
-    }
+@keyframes anime-text {
+  from {
+    
+    transform: rotate(0deg);
   }
+  to {
+    
+    transform: rotate(360deg);
+  }
+}
+
+
 
 #page9 {
   width: 100%;
@@ -521,53 +533,103 @@ iframe {
 /* our menu */
 
 
-.part1 {
+
+  
+  #our-span{
+    display: none;
+  }
+
+  #our:after{
+    content: 'our';
+   
+    position: absolute;
+    top: 10%;
+    right: 28%;
+    font-size: 20vw;
+  }
+
+
+  #menu-span{
+    display: none;
+  }
+  #menu:after{
+    content: 'menu';
+    font-family: "plaib light";
+    position: absolute;
+    top: 20%;
+    right: 9%;
+    font-size: 25vw;
+    margin-top: 2vw;
+    
+  }
+
+  
+#circle-text{
+  display: block;
+  width : 80%;
+  position: absolute;
+  top: 40%;
+  right: 8.5%;
+  transform-origin: center;
+  animation: anime-text 10s linear infinite;
+}
+
+
+#arrow{
+  display: block;
+  width : 80%;
+  position: absolute;
+  top: 40%;
+  right: 8.5%;
+
+}
+  
+  #page4 h2 {
+    display: none;
+  }
+  
+
+
+  .part1 {
     width: 100%;
     height: 100%;
     padding: 8vh 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-  }
-  
-  #our {
-    font-family: "plain light";
-    font-size: 12vw;
-    width: 100%;
-  }
-  #menu {
-    font-family: "silk serif";
-    font-size: 12vw;
-    -webkit-text-stroke: 0.5px #fed766;
-    color: transparent;
-    position: absolute;
-    z-index: 1;
-    
-  }
-  
-  #page4 h2 {
-    font-family: "gilroy";
-  }
-  
+
   .part2,
   .part3,
   .part4 {
-    margin-top: 30vw;
-   animation-name: anime-menu;
-   animation-duration: 10s;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
+    width: 290%;
+    height: 100%;
+   gap: 0vw
 
+  }
+
+  #page4::-webkit-scrollbar{
+display: none;
   }
   
   .part2 img,
   .part3 img,
   .part4 img {
+    margin-top: 8vw;
     width: 90%;
-    height: 70%;
+    height: 100%;
+    padding: 15vw;
     
   }
+  #last-page{
+    padding-right: 10vw;
+  }
   #page4 {
-
-    overflow-x: hidden;
+    overflow-x: overlay;
+    overflow-y: hidden;
+  
   }
 
 
