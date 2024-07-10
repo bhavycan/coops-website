@@ -110,6 +110,7 @@ tl.to("#page4 img",{
     color: "white",
     x: "-350%",
     scrollTrigger : {
+        id : "tokill",
         trigger : "#page4",
         scroller : "#main",
         start: "top 100%",
@@ -259,18 +260,11 @@ let mm = gsap.matchMedia();
 // add a media query. When it matches, the associated function will run
 mm.add("(max-width: 700px)", () => {
 
-  // this setup code only runs when viewport is at least 800px wide
+  // this setup code only runs when viewport is at least 700px wide
 
-  tl.to("#page4 img",{
-    color: "white",
-    x: "0%",
-    scrollTrigger : {
-        trigger : "#page4",
-        scroller : "#main",
-        start: "top 100%",
-        end: "top -100%",
-        scrub: 1,
-        markers: false
-}})
+
+
+
+ScrollTrigger.getById("tokill").kill(true);
 });
 
