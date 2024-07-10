@@ -544,7 +544,7 @@ iframe {
    
     position: absolute;
     top: 10%;
-    right: 28%;
+    right: 30%;
     font-size: 20vw;
   }
 
@@ -557,7 +557,7 @@ iframe {
     font-family: "plaib light";
     position: absolute;
     top: 20%;
-    right: 9%;
+    right: 10%;
     font-size: 25vw;
     margin-top: 2vw;
     
@@ -604,7 +604,7 @@ iframe {
   .part2,
   .part3,
   .part4 {
-    width: 290%;
+    width: 350%;
     height: 100%;
    gap: 0vw
 
