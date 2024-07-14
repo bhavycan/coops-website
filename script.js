@@ -235,6 +235,7 @@ tl.to("#page9 h1",{
     fontFamily : "gilroy",
     fontSize : "8vw",
     scrollTrigger : {
+        id: "page9-title",
         trigger : "#page9",
         scroller : "#main",
         start: "top 40%",
@@ -255,7 +256,7 @@ tl.to("#car",{
         markers: false
 }})
 
-
+ScrollTrigger.refresh();
 
 // create
 let mm = gsap.matchMedia();
@@ -272,6 +273,8 @@ ScrollTrigger.getById("tokill").kill(true);
 ScrollTrigger.getById("skip-text-kill").kill(true);
 ScrollTrigger.getById("page8-title").kill(true);
 ScrollTrigger.getById("page8-title2").kill(true);
+ScrollTrigger.getById("page9-title").kill(true);
+
 
 tl.to("#amenities span",{
     fontSize : "9vw",
@@ -310,6 +313,22 @@ tl.to("#page8 h2",{
         scrub: 1,
         markers: false
 }})
+
+tl.to("#page9 h1",{
+    color : "transparent",
+    letterSpacing: "1vw",
+    fontFamily : "gilroy",
+    scrollTrigger : {
+        id: "page9-title",
+        trigger : "#page9",
+        scroller : "#main",
+        start: "top 40%",
+        end: "top 0%",
+        scrub: 1,
+        markers: false
+}})
+
+ScrollTrigger.refresh();
 
 
 });
