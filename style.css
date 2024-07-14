@@ -248,6 +248,10 @@ body {
   top: 9%;
 }
 
+#amenities-mobile{
+  display: none;
+}
+
 #honk {
   width: 10%;
   height: 10%;
@@ -634,8 +638,6 @@ display: none;
   #page5,#page6{
     display: none;
   }
-
-
   
   #skip {
 
@@ -669,10 +671,59 @@ display: none;
     text-transform: uppercase;
     font-size: 4vw;
     letter-spacing: 0.25vw;
+    position: absolute;
+    top: 10%;
+    transform: translate(20%);
+   
+  }
+
+  #amenities h2{
+    border-bottom: 2px solid #fed766;
+    width: 90%;
+
   }
   
+#amenities-mobile{
+  display: block;
+  position: absolute;
+  right: 11%;
+  top: 13%;
+  opacity: 0.2;
+}
+
+
+#page8{
+
+  position: relative;
+}
+
+#page8 h2 {
+  position: absolute;
+  top: -13%;
+  height: 10%;
+  font-size: 17vw;
+ position: absolute;
+  letter-spacing: 5vw;
+  padding-top: 10%;
+}
+#page8 h1 {
+  width: 100%;
+  height: 20%;
+margin-top: 20%;
+  font-size: 16vw;
+  line-height: 13vw;
+  border-bottom: 2px solid white;
+}
+
+#bottom-scroller-container {
+  margin-top: 20%;
+  width: 400%;
+  height: 50%; 
+}
 
 
 
 
 }
+
+

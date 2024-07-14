@@ -206,6 +206,7 @@ tl.to("#page8 h1",{
     fontSize: "8vw",
     letterSpacing: "1vw",
     scrollTrigger : {
+        id : "page8-title",
         trigger : "#page8",
         scroller : "#main",
         start: "top 40%",
@@ -218,6 +219,7 @@ tl.to("#page8 h2",{
     letterSpacing: "1vw",
     fontSize: "5vw",
     scrollTrigger : {
+        id : "page8-title2",
         trigger : "#page8",
         scroller : "#main",
         start: "top 40%",
@@ -268,6 +270,8 @@ mm.add("(max-width: 700px)", () => {
 
 ScrollTrigger.getById("tokill").kill(true);
 ScrollTrigger.getById("skip-text-kill").kill(true);
+ScrollTrigger.getById("page8-title").kill(true);
+ScrollTrigger.getById("page8-title2").kill(true);
 
 tl.to("#amenities span",{
     fontSize : "9vw",
@@ -277,6 +281,32 @@ tl.to("#amenities span",{
         scroller : "#main",
         start: "top 40%",
         end: "top -20%",
+        scrub: 1,
+        markers: false
+}})
+
+tl.to("#page8 h1",{
+    color : "transparent",
+    fontWeight: "800",
+    letterSpacing: "2vw",
+    scrollTrigger : {
+        id : "page8-title",
+        trigger : "#page8",
+        scroller : "#main",
+        start: "top 40%",
+        end: "top 0%",
+        scrub: 1,
+        markers: false
+}})
+
+tl.to("#page8 h2",{
+    letterSpacing: "1vw",
+    scrollTrigger : {
+        id : "page8-title2",
+        trigger : "#page8",
+        scroller : "#main",
+        start: "top 40%",
+        end: "top 0%",
         scrub: 1,
         markers: false
 }})
