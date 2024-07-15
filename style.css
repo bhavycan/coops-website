@@ -695,11 +695,13 @@ display: none;
 #page8{
 
   position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #page8 h2 {
   position: absolute;
-  top: -13%;
+  top: -1%;
   height: 10%;
   font-size: 17vw;
  position: absolute;
@@ -719,6 +721,7 @@ margin-top: 20%;
   margin-top: 20%;
   width: 400%;
   height: 50%; 
+ 
 }
 
 
@@ -726,6 +729,8 @@ margin-top: 20%;
 #page9 {
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 

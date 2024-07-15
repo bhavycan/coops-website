@@ -256,7 +256,7 @@ tl.to("#car",{
         markers: false
 }})
 
-ScrollTrigger.refresh();
+
 
 // create
 let mm = gsap.matchMedia();
@@ -265,7 +265,6 @@ let mm = gsap.matchMedia();
 mm.add("(max-width: 700px)", () => {
 
   // this setup code only runs when viewport is at least 700px wide
-
 
 
 
@@ -293,7 +292,6 @@ tl.to("#page8 h1",{
     fontWeight: "800",
     letterSpacing: "2vw",
     scrollTrigger : {
-        id : "page8-title",
         trigger : "#page8",
         scroller : "#main",
         start: "top 40%",
@@ -305,7 +303,6 @@ tl.to("#page8 h1",{
 tl.to("#page8 h2",{
     letterSpacing: "1vw",
     scrollTrigger : {
-        id : "page8-title2",
         trigger : "#page8",
         scroller : "#main",
         start: "top 40%",
@@ -319,7 +316,6 @@ tl.to("#page9 h1",{
     letterSpacing: "1vw",
     fontFamily : "gilroy",
     scrollTrigger : {
-        id: "page9-title",
         trigger : "#page9",
         scroller : "#main",
         start: "top 40%",
@@ -328,7 +324,6 @@ tl.to("#page9 h1",{
         markers: false
 }})
 
-ScrollTrigger.refresh();
 
 
 });
