@@ -101,7 +101,7 @@ body {
 }
 
 #page1-down span {
-    font-family: "gilroy";
+  font-family: "gilroy";
   font-size: 10vw;
   -webkit-text-stroke: 1px #fed766;
   color: transparent;
@@ -187,12 +187,12 @@ body {
   color: transparent;
 }
 
-#circle-text{
-  display:  none;
+#circle-text {
+  display: none;
 }
 
-#arrow{
-  display:  none;
+#arrow {
+  display: none;
 }
 
 #page4 h2 {
@@ -248,7 +248,7 @@ body {
   top: 9%;
 }
 
-#amenities-mobile{
+#amenities-mobile {
   display: none;
 }
 
@@ -358,16 +358,12 @@ body {
 
 @keyframes anime-text {
   from {
-    
     transform: rotate(0deg);
   }
   to {
-    
     transform: rotate(360deg);
   }
 }
-
-
 
 #page9 {
   width: 100%;
@@ -448,18 +444,11 @@ iframe {
   transition: all 1s ease-in-out;
 }
 
-#car {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  left: 100%;
-}
+
+
 
 @media (max-width: 700px) {
-
-
-
-/* navigation bar */
+  /* navigation bar */
 
   #nav {
     height: 28%;
@@ -490,25 +479,22 @@ iframe {
     font-size: 2vw;
   }
 
-/* page1 down text */
+  /* page1 down text */
 
-  
   #page1-down h1 {
     font-size: 20vw;
     line-height: 20vw;
     text-align: center;
   }
- 
-  
+
   #page1-down span {
     font-size: 25vw;
     font-family: "gilroy";
   }
 
-/* subline */
+  /* subline */
 
-
-#sub-line {
+  #sub-line {
     font-size: 3vw;
     height: 5%;
     display: flex;
@@ -516,83 +502,70 @@ iframe {
     justify-content: center;
   }
 
+  /* about us */
 
-/* about us */
-
-#page3 { 
+  #page3 {
     justify-content: center;
   }
-  
+
   #page3 h1 {
     font-size: 14vw;
   }
-  
+
   #about-us {
     line-height: 4.5vw;
     font-size: 4vw;
   }
 
+  /* our menu */
 
-
-/* our menu */
-
-
-
-  
-  #our-span{
+  #our-span {
     display: none;
   }
 
-  #our:after{
-    content: 'our';
-   
+  #our:after {
+    content: "our";
+
     position: absolute;
     top: 10%;
     right: 30%;
     font-size: 20vw;
   }
 
-
-  #menu-span{
+  #menu-span {
     display: none;
   }
-  #menu:after{
-    content: 'menu';
+  #menu:after {
+    content: "menu";
     font-family: "plaib light";
     position: absolute;
     top: 20%;
     right: 10%;
     font-size: 25vw;
     margin-top: 2vw;
-    
   }
 
-  
-#circle-text{
-  display: block;
-  width : 80%;
-  position: absolute;
-  top: 40%;
-  right: 8.5%;
-  transform-origin: center;
-  animation: anime-text 10s linear infinite;
-}
+  #circle-text {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    right: 8.5%;
+    transform-origin: center;
+    animation: anime-text 10s linear infinite;
+  }
 
+  #arrow {
+    display: block;
+    width: 80%;
+    position: absolute;
+    top: 40%;
+    right: 8.5%;
+  }
 
-#arrow{
-  display: block;
-  width : 80%;
-  position: absolute;
-  top: 40%;
-  right: 8.5%;
-
-}
-  
   #page4 h2 {
     display: none;
   }
-  
-
 
   .part1 {
     width: 100%;
@@ -604,20 +577,18 @@ iframe {
     text-align: center;
   }
 
-
   .part2,
   .part3,
   .part4 {
     width: 350%;
     height: 100%;
-   gap: 0vw
-
+    gap: 0vw;
   }
 
-  #page4::-webkit-scrollbar{
-display: none;
+  #page4::-webkit-scrollbar {
+    display: none;
   }
-  
+
   .part2 img,
   .part3 img,
   .part4 img {
@@ -625,41 +596,36 @@ display: none;
     width: 90%;
     height: 100%;
     padding: 15vw;
-    
   }
-  #last-page{
+  #last-page {
     padding-right: 10vw;
   }
   #page4 {
     overflow-x: overlay;
     overflow-y: hidden;
-  
   }
-  #page5,#page6{
+  #page5,
+  #page6 {
     display: none;
   }
-  
-  #skip {
 
+  #skip {
     width: 100%;
     top: 60%;
+  }
 
-    
-  }
-  
   #honk {
- display: none;
+    display: none;
   }
-  
+
   #page7 h1 {
     font-family: "plain light";
     font-size: 15vw;
     font-weight: 400;
     text-align: center;
   }
-  
 
-  #span-text{
+  #span-text {
     font-size: 2vw;
     margin-left: 2vw;
   }
@@ -674,106 +640,87 @@ display: none;
     position: absolute;
     top: 10%;
     transform: translate(20%);
-   
   }
 
-  #amenities h2{
+  #amenities h2 {
     border-bottom: 2px solid #fed766;
     width: 90%;
-
   }
-  
-#amenities-mobile{
-  display: block;
-  position: absolute;
-  right: 11%;
-  top: 13%;
-  opacity: 0.2;
-}
 
+  #amenities-mobile {
+    display: block;
+    position: absolute;
+    right: 11%;
+    top: 13%;
+    opacity: 0.2;
+  }
 
-#page8{
+  #page8 {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+  #page8 h2 {
+    position: absolute;
+    top: -1%;
+    height: 10%;
+    font-size: 17vw;
+    position: absolute;
+    letter-spacing: 5vw;
+    padding-top: 10%;
+  }
+  #page8 h1 {
+    width: 100%;
+    height: 20%;
+    margin-top: 20%;
+    font-size: 16vw;
+    line-height: 13vw;
+    border-bottom: 2px solid white;
+  }
 
-#page8 h2 {
-  position: absolute;
-  top: -1%;
-  height: 10%;
-  font-size: 17vw;
- position: absolute;
-  letter-spacing: 5vw;
-  padding-top: 10%;
-}
-#page8 h1 {
-  width: 100%;
-  height: 20%;
-margin-top: 20%;
-  font-size: 16vw;
-  line-height: 13vw;
-  border-bottom: 2px solid white;
-}
+  #bottom-scroller-container {
+    margin-top: 20%;
+    width: 400%;
+    height: 50%;
+  }
 
-#bottom-scroller-container {
-  margin-top: 20%;
-  width: 400%;
-  height: 50%; 
- 
-}
+  #page9 {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
+  #contact h1 {
+    margin-top: 20vw;
+    font-size: 15vw;
+  }
 
+  #contact h2 {
+    margin-top: 5vw;
+  }
+  #details {
+    gap: 10vw;
+  }
 
-#page9 {
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+  #details a {
+    border-bottom: 2px solid #fed766;
 
+    display: flex;
+    align-items: center;
+    height: 5%;
+  }
 
-#contact h1 {
-  margin-top: 20vw;
-  font-size: 15vw;
-}
+  a {
+    height: 10%;
+    font-size: 5.5vw;
+  }
 
-#contact h2 {
-  margin-top: 5vw;
-}
-#details {
-  gap: 10vw;
-}
-
-#details a{
-  
-  border-bottom: 2px solid #fed766;
- 
-  display: flex;
-  align-items: center;
-  height : 5%;
-  
-}
-
-a {
-  height: 10%;
-  font-size: 5.5vw;
- 
-}
-
-
-#map {
-  width: 80%;
-}
-
-
-#car {
- display: none;
-}
+  #map {
+    width: 80%;
+  }
 
 
 
 }
-
-
