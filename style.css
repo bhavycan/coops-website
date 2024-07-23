@@ -447,11 +447,13 @@ iframe {
 
 
 
+
+
 @media (max-width: 700px) {
   /* navigation bar */
 
   #nav {
-    height: 28%;
+    height: 30%;
     flex-direction: column;
     border-bottom: 2px solid #f4f4f8;
     gap: 2%;
@@ -514,7 +516,8 @@ iframe {
 
   #about-us {
     line-height: 4.5vw;
-    font-size: 4vw;
+    font-size: 5vw;
+    line-height: 6vw;
   }
 
   /* our menu */
@@ -611,7 +614,8 @@ iframe {
 
   #skip {
     width: 100%;
-    top: 60%;
+    top: 68%;
+   
   }
 
   #honk {
@@ -639,7 +643,8 @@ iframe {
     letter-spacing: 0.25vw;
     position: absolute;
     top: 10%;
-    transform: translate(20%);
+    transform: translate(5%);
+    
   }
 
   #amenities h2 {
