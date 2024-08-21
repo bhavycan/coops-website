@@ -14,7 +14,7 @@ body {
 
 #main {
   width: 100%;
-
+  position: relative;
   background-color: #111;
   color: #f4f4f8;
 }
@@ -457,7 +457,16 @@ iframe {
 }
 
 
-
+.crsr{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  z-index: 99999;
+  border: 2px solid #fed766;
+  transform: translate(-50%,-50%)
+}
 
 
 

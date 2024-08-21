@@ -241,6 +241,15 @@ tl.to("#page9 h1", {
   },
 });
 
+document.addEventListener("mousemove", function(dets){
+  gsap.to(".crsr", {
+    y : dets.y,
+    x : dets.x
+  })
+})
+
+Shery.makeMagnet("#details h3 , #amenities h2 , #right-part h1 ");
+
 
 
 // create
