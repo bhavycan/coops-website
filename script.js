@@ -38,7 +38,7 @@ ScrollTrigger.refresh();
 
 var tl = gsap.timeline();
 
-tl.from("#name,#name h1,#right-part h1, #logo,#right-part h2", {
+tl.from("#name,#name h1", {
   y: -20,
   duration: 1,
 });
@@ -248,7 +248,7 @@ document.addEventListener("mousemove", function(dets){
   })
 })
 
-Shery.makeMagnet("#details h3 , #amenities h2 , #right-part h1 ");
+Shery.makeMagnet("#details h3 , #amenities h2  ");
 
 
 
@@ -264,6 +264,10 @@ mm.add("(max-width: 700px)", () => {
   ScrollTrigger.getById("page8-title").kill(true);
   ScrollTrigger.getById("page8-title2").kill(true);
   ScrollTrigger.getById("page9-title").kill(true);
+
+  tl.to(".crsr",{
+    display : "none"
+  })
 
   tl.to("#amenities span", {
     fontSize: "9vw",
@@ -318,5 +322,4 @@ mm.add("(max-width: 700px)", () => {
     },
   });
 });
-
 

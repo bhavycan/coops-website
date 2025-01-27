@@ -56,7 +56,7 @@ body {
   /* background-color: red; */
   display: flex;
   align-items: center;
-  gap: 10vw;
+  gap: 9vw;
   border-bottom: 2px solid #f4f4f8;
 }
 
@@ -93,18 +93,51 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 }
 
-#right-part h1 {
-  text-transform: uppercase;
-  font-family: "gilroy";
-  font-size: 2.5vw;
+#right-part i{
+ color: #fed766;
+ font-size: 3.5vw;
 }
-#right-part h2 {
+
+#right-part i:hover{
+  color: white;
+  font-size: 3vw;
+ }
+
+.facebook{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+ 
+  z-index: 999999;
+  width: 100%;
+  
+}
+ 
+.right-tag{
+  color: #f4f4f8;
+  font-size: 2vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-family: "plain light";
-  font-size: 1vw;
+  font-weight: 600;
+  z-index: 999999;
+  
 }
+
+.right-tag:hover{
+  color: #fed766;
+  
+
+  
+}
+
 
 #page1-down {
   padding: 8vh 3vw;
@@ -512,16 +545,32 @@ iframe {
     font-size: 4vw;
   }
 
-  #right-part {
-    gap: 4vw;
-  }
+ 
 
-  #right-part h1 {
-    font-size: 4vw;
-  }
-  #right-part h2 {
-    font-size: 2vw;
-  }
+  #right-part i{
+    font-size: 8vw;
+   }
+   
+   #right-part i:hover{
+     font-size: 8vw;
+    }
+   
+   .facebook{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1vw;
+    
+     z-index: 999999;
+     width: 100%;
+     
+   }
+    
+   .right-tag{
+     display: none;
+     
+   }
+   
 
   /* page1 down text */
 
@@ -587,7 +636,7 @@ iframe {
     font-family: "plaib light";
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 15%;
     font-size: 25vw;
     margin-top: 2vw;
   }
